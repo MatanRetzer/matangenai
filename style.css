@@ -244,4 +244,5 @@ html[dir="rtl"] .service-card {
 }
 html[dir="rtl"] .contact-details {
   align-items: flex-end;
+  text-align: right;
 }
