@@ -1,7 +1,10 @@
+// Simple language switcher
+"use strict";
 (function() {
   // Set default language to English
   let lang = localStorage.getItem("lang") || "en";
 
+  // Switch between languages
   function setLang(newLang) {
     lang = newLang;
     localStorage.setItem("lang", lang);
@@ -26,6 +29,7 @@
     });
   }
 
+  // Initialize after DOM is ready
   document.addEventListener("DOMContentLoaded", function() {
     // Set initial lang
     setLang(lang);
